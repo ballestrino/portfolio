@@ -1,11 +1,14 @@
 import { useContext } from 'react';
 import { AppContext } from './context/AppContextProvider';
+import NavBar from './components/NavBar';
 
 function App() {
   const handleClick = () => {
     console.log('clicked');
   };
-  return <button onClick={handleClick}>button test</button>;
+  return (<>
+  <NavBar/>
+  </>);
 }
 
 export default App;
