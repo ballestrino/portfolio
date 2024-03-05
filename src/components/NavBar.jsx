@@ -1,14 +1,14 @@
 import LanguageSelector from './LanguageSelector.jsx'
 import Menu from './Menu.jsx'
 function NavBar() {
-  return <header className='flex justify-between items-center'>
+  return <nav className='flex justify-between items-center'>
     <section>
       <LanguageSelector/>
     </section>
     <section>
       <Menu/>
     </section>
-  </header>;
+  </nav>;
 }
 
 export default NavBar;
