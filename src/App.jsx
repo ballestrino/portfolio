@@ -1,13 +1,12 @@
-import { useContext } from 'react';
-import { AppContext } from './context/AppContextProvider';
-import NavBar from './components/NavBar';
+import InitialPage from "./components/InitialPage";
 
 function App() {
   const handleClick = () => {
     console.log('clicked');
   };
   return (<>
-  <NavBar/>
+    
+    <InitialPage/>
   </>);
 }
 

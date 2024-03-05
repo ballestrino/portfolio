@@ -1,5 +1,13 @@
+import NavBar from "./NavBar";
+import Hello from "./Hello";
+
 function InitialPage() {
-    return <div>initial page</div>
+    return (
+        <>
+        <NavBar />
+        <Hello />
+        </>
+    )
 }
 
 export default InitialPage;
