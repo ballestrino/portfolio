@@ -3,8 +3,14 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      height: {
+        vh75: '75vh',
+      },
       textColor: {
-        'primary': '#168aad',
+        primary: '#168aad',
+      },
+      borderColor: {
+        primary: '#168aad',
       },
     },
   },

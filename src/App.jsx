@@ -1,13 +1,13 @@
-import InitialPage from "./components/InitialPage";
+import InitialPage from './components/InitialPage';
+import AboutMe from './components/AboutMe';
 
 function App() {
-  const handleClick = () => {
-    console.log('clicked');
-  };
-  return (<>
-    
-    <InitialPage/>
-  </>);
+  return (
+    <>
+      <InitialPage />
+      <AboutMe />
+    </>
+  );
 }
 
 export default App;
