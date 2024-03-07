@@ -1,6 +1,9 @@
+import { useState } from 'react';
+
 function Technologies() {
   //css, html, git, github, javascript, react, python, SQL, tailwind, vite
-  let elements = [
+
+  const [elements, setElements] = useState([
     'css.png',
     'html.png',
     'git.png',
@@ -11,48 +14,48 @@ function Technologies() {
     'SQL.png',
     'tailwind.png',
     'vite.png',
-  ];
+  ]);
 
   const handleRightArrow = () => {
     let newElements = [];
     for (let i = 0; i < elements.length; i++) {
-      //example with i = 0
-      let previousElement = elements[i - 1]; //vite
+      let previousElement = elements[i - 1];
       if (previousElement === undefined) {
         previousElement = elements[elements.length - 1];
-        newElements[i] = previousElement; //vite
-        continue;
       }
-      //asignamos a previous element el ultimo valor de el array elements
-      newElements[i] = previousElement; //vite
+      newElements[i] = previousElement;
     }
-    elements = newElements;
+    setElements(newElements);
     console.log(elements);
   };
 
   const handleLeftArrow = () => {
     let newElements = [];
     for (let i = 0; i < elements.length; i++) {
-      //example with i = 0
-      let nextElement = elements[i + 1]; //vite
+      let nextElement = elements[i + 1];
       if (nextElement === undefined) {
         nextElement = elements[0];
-        newElements[i] = nextElement; //vite
-        continue;
       }
-      //asignamos a previous element el ultimo valor de el array elements
-      newElements[i] = nextElement; //vite
+      newElements[i] = nextElement;
     }
-    elements = newElements;
+    setElements(newElements);
     console.log(elements);
   };
 
-  //test funcionamiento
+  //Interfaz
   return (
-    <section className='h-screen w-screen bg-gray-100'>
-      <button onClick={handleLeftArrow}>left</button>
-      <hr />
-      <button onClick={handleRightArrow}>right arrow</button>
+    <section className='h-vh50 w-screen bg-gray-100'>
+      <img
+        onClick={handleLeftArrow}
+        src='/leftArrow.svg'
+        alt='move slider left'
+      />
+      <div className='flex flex-col'></div>
+      <img
+        onClick={handleRightArrow}
+        src='/rightArrow.svg'
+        alt='move slider right'
+      />
     </section>
   );
 }

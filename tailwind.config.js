@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       height: {
+        vh50: '50vh',
         vh75: '75vh',
       },
       textColor: {
