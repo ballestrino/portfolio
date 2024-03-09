@@ -6,7 +6,7 @@ function Menu() {
       className='flex justify-between p-2 pr-10
         '
     >
-      <li className='pl-10'>
+      <li className='pl-10 z-50'>
         <ScrollLink
           className='cursor-pointer'
           to='home'
@@ -16,7 +16,7 @@ function Menu() {
           Home
         </ScrollLink>
       </li>
-      <li className='pl-10'>
+      <li className='pl-10 z-50'>
         <ScrollLink
           className='cursor-pointer'
           to='aboutMe'
@@ -26,7 +26,7 @@ function Menu() {
           About
         </ScrollLink>
       </li>
-      <li className='pl-10'>
+      <li className='pl-10 z-50'>
         <ScrollLink
           className='cursor-pointer'
           to='projects'

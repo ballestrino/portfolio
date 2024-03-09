@@ -12,6 +12,7 @@ function TechnologiesSlider() {
     'github.png',
     'javascript.png',
     'react.png',
+    'node.png',
     'python.png',
     'SQL.png',
     'tailwind.png',
