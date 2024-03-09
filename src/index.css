@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Delete x scroll bar */
+body {
+  overflow-x: hidden;
+}
 
+/* Prevents the slider from being too wide */
+.slick-slider {
+  max-width: 500px !important;
+}

@@ -1,3 +1,5 @@
+import { Link as ScrollLink } from 'react-scroll';
+
 function AboutMeText() {
   return (
     <section className='flex flex-col justify-center border-l-2 border-white w-2/5 h-fit ml-10 pl-10 py-2 text-white'>
@@ -13,8 +15,16 @@ function AboutMeText() {
         Explora mi portfolio y descubre cómo transformo ideas en código con
         pasión y originalidad
       </span>
+
       <button className='w-1/5  rounded-lg border-2 border-primary px-2 my-2'>
-        Proyectos
+        <ScrollLink
+          to='projects'
+          smooth={true}
+          duration={1000}
+          className='cursor-pointer'
+        >
+          Ver Proyectos
+        </ScrollLink>
       </button>
     </section>
   );
