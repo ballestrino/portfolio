@@ -78,7 +78,7 @@ function TechnologiesSlider() {
   return (
     <div className='flex justify-center w-3/5'>
       <div className='flex items-center justify-center w-fit bg-slate-800 relative'>
-        <h2 className='text-14xl text-white opacity-30 absolute -translate-y-6'>
+        <h2 className='text-14xl text-white opacity-30 absolute -translate-y-6 select-none'>
           Skills
         </h2>
         <Slider {...settings}>

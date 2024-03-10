@@ -22,7 +22,7 @@ export default {
       },
 
       textColor: {
-        primary: '#90e0ef',
+        primary: '#A0DFF3',
       },
       fontSize: {
         '14xl': '14rem',
