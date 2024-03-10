@@ -17,7 +17,7 @@ export default {
         vh75: '75vh',
       },
       textColor: {
-        primary: '#168aad',
+        primary: '#A0DFF3',
       },
       fontSize: {
         '14xl': '14rem',

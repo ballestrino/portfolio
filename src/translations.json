@@ -1,4 +1,22 @@
 {
-  "es": {},
-  "en": {}
+  "es": {
+    "NavAbout": "Sobre Mí",
+    "NavProjects": "Proyectos",
+    "NavContact": "Contacto",
+    "Hello": "Hola, soy Nacho",
+    "webDeveloper": "Desarrollador Web",
+    "AboutMeText": "Soy un joven programador de 17 años de Uruguay. Mi fascinación por la programación nació desde pequeño. Soy dedicado,creativo y siempre estoy en la búsqueda de soluciones innovadoras. Actualmente, creo proyectos web con diversas tecnologías del momento y continúo aprendiendo día a día para mejorar mis habilidades.",
+    "SpanAboutMe": "Explora mi portfolio y descubre cómo transformo ideas en código con pasión y originalidad",
+    "SeeProjects": "Ver Proyectos"
+  },
+  "en": {
+    "NavAbout": "About",
+    "NavProjects": "Projects",
+    "NavContact": "Contact",
+    "Hello": "Hi, I'm Nacho",
+    "webDeveloper": "Web Developer",
+    "AboutMeText": "I am a 17-year-old programmer from Uruguay. My fascination with programming began at a young age. I am dedicated, creative, and always on the lookout for innovative solutions. Currently, I work on web projects using various cutting-edge technologies, and I continue to learn and improve my skills every day.",
+    "SpanAboutMe": "Explore my portfolio and discover how I transform ideas into code with passion and originality.",
+    "SeeProjects": "View Projects"
+  }
 }
