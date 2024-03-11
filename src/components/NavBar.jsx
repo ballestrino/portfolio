@@ -1,16 +1,18 @@
-import LanguageSelector from './LanguageSelector.jsx'
-import Menu from './Menu.jsx'
+import LanguageSelector from './LanguageSelector.jsx';
+import Menu from './Menu.jsx';
 function NavBar() {
-  return <nav className='relative' >
-    <div className='flex justify-between items-center bg-slate-900 text-white absolute top-0 w-full'>
-    <section>
-      <LanguageSelector/>
-    </section>
-    <section>
-      <Menu/>
-      </section>
+  return (
+    <nav className='relative'>
+      <div className='flex justify-between items-center  text-white absolute top-4 w-full'>
+        <section>
+          <LanguageSelector />
+        </section>
+        <section>
+          <Menu />
+        </section>
       </div>
-  </nav>;
+    </nav>
+  );
 }
 
 export default NavBar;

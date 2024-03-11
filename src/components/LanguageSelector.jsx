@@ -1,5 +1,14 @@
 function LanguageSelector() {
-return <img src="../../public/Bandera_de_España.png" alt="idioma" className="h-5 w-5 rounded-xl m-2"/>
+  return (
+    <p
+      className='h-5 w-5 rounded-full ml-5
+      md:text-md
+      lg:text-xl
+      '
+    >
+      En
+    </p>
+  );
 }
 
 export default LanguageSelector;

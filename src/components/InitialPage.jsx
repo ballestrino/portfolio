@@ -4,7 +4,7 @@ import MyImage from './MyImage';
 
 function InitialPage() {
   return (
-    <header className='w-screen h-screen bg-slate-900'>
+    <header className='w-screen h-screen bg-primary'>
       <NavBar />
       <section className='flex'>
         <Hello />

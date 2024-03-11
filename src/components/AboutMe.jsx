@@ -5,13 +5,13 @@ function AboutMe() {
   return (
     <section
       id='aboutMe'
-      className='flex flex-col items-center h-vh65 w-screen bg-slate-800 '
+      className='flex w-screen bg-secondary p-56
+      xl:vh-65 xl:items-center xl:flex-row
+      lg:flex-col md:h-vh65 md:justify-between md:items-center
+       '
     >
-      <div className='flex items-center h-full w-screen relative'>
-        <AboutMeText />
-        <TechnologiesSlider />
-      </div>
-      <div></div>
+      <AboutMeText />
+      <TechnologiesSlider />
     </section>
   );
 }

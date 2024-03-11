@@ -6,8 +6,13 @@ function Menu() {
   const { translation } = useContext(AppContext);
   return (
     <ul
-      className='flex justify-between p-2 pr-10
-        '
+      className='flex justify-between items-center pr-16
+     
+      sm:hidden
+      md:flex md:text-md
+      lg:text-xl
+
+      '
     >
       <li className='pl-10 z-50'>
         <ScrollLink
@@ -29,9 +34,9 @@ function Menu() {
           {translation.NavProjects}
         </ScrollLink>
       </li>
-      <li className='pl-10'>
+      <li className='pl-10 z-50'>
         <ScrollLink
-          className='cursor-pointer select-none '
+          className='cursor-pointer select-none'
           to='contact'
           smooth={true}
           duration={1000}

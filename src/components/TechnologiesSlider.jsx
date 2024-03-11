@@ -71,19 +71,57 @@ function TechnologiesSlider() {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     //quitar el select
-    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   // UI
   return (
-    <div className='flex justify-center w-3/5'>
-      <div className='flex items-center justify-center w-fit bg-slate-800 relative'>
-        <h2 className='text-14xl text-white opacity-30 absolute -translate-y-6 select-none'>
+    <div className='flex justify-center '>
+      <div
+        className='flex items-center justify-center w-fit bg-secondary relative
+      '
+      >
+        <h2
+          className='text-skills  absolute -translate-y-6 select-none
+        xl:text-14xl
+        lg:text-10xl
+        md:text-9xl
+        '
+        >
           Skills
         </h2>
         <Slider {...settings}>
           {elements.map((element, index) => (
-            <div key={index} className='flex justify-center'>
+            <div
+              key={index}
+              className='flex justify-center
+            '
+            >
               <img
                 className='m-auto w-16 h-16'
                 src={element}
