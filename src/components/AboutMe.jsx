@@ -1,7 +1,5 @@
 import AboutMeText from './AboutMeText';
 import TechnologiesSlider from './TechnologiesSlider';
-import { useContext } from 'react';
-import { AppContext } from '../context/AppContextProvider';
 
 function AboutMe() {
   return (
