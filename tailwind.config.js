@@ -34,6 +34,7 @@ export default {
 
       textColor: {
         tertiary: '#72efdd',
+        ProjectTitle: '#8ecae6',
       },
       fontSize: {
         '1.5xl': '1.35rem',
