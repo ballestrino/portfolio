@@ -50,6 +50,7 @@ export default {
       },
       borderColor: {
         button: '#5899e2',
+        customGray: '#343a40',
       },
       //media queries
       screens: {
