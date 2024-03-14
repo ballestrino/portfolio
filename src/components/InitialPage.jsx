@@ -4,9 +4,19 @@ import Presentation from './Presentation';
 
 function InitialPage() {
   return (
-    <header className='flex w-screen h-screen bg-primary'>
+    <header
+      id='home'
+      className='
+      flex bg-primary 
+      w-screen h-screen'
+    >
       <NavBar />
-      <section className='flex justify-between w-3/6 m-auto'>
+      <section
+        className='
+      flex justify-between 
+      w-3/6 
+      m-auto'
+      >
         <Presentation />
         <MyImage />
       </section>

@@ -1,5 +1,6 @@
 {
   "en": {
+    "NavHome": "Home",
     "NavAbout": "About",
     "NavProjects": "Projects",
     "NavContact": "Contact",
@@ -11,6 +12,7 @@
     "SeeProjects": "View Projects"
   },
   "ess": {
+    "NavHome": "Inicio",
     "NavAbout": "Sobre mi",
     "NavProjects": "Proyectos",
     "NavContact": "Contacto",

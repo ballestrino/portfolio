@@ -14,7 +14,19 @@ function Menu() {
       <li className='pl-10 z-50'>
         <ScrollLink
           className='cursor-pointer select-none'
+          to='home'
+          smooth={true}
+          duration={1000}
+        >
+          {translationProvider.NavHome}
+        </ScrollLink>
+      </li>
+
+      <li className='pl-10 z-50'>
+        <ScrollLink
+          className='cursor-pointer select-none'
           to='aboutMe'
+          offset={-218} //reducir la bajada del scroll por 218px
           smooth={true}
           duration={1000}
         >
@@ -26,6 +38,7 @@ function Menu() {
         <ScrollLink
           className='cursor-pointer select-none'
           to='projects'
+          offset={185}
           smooth={true}
           duration={1000}
         >
