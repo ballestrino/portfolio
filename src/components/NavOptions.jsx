@@ -3,15 +3,12 @@ import { useContext } from 'react';
 import { AppContext } from '../context/AppContextProvider';
 
 function Menu() {
-  const { translation } = useContext(AppContext);
+  const { translationProvider } = useContext(AppContext);
   return (
     <ul
-      className='flex justify-between items-center pr-16
-     
-      sm:hidden
+      className='flex justify-between items-center pr-6 text-white
       md:flex md:text-md
-      lg:text-xl
-
+      sm:hidden
       '
     >
       <li className='pl-10 z-50'>
@@ -21,9 +18,10 @@ function Menu() {
           smooth={true}
           duration={1000}
         >
-          {translation.NavAbout}
+          {translationProvider.NavAbout}
         </ScrollLink>
       </li>
+
       <li className='pl-10 z-50'>
         <ScrollLink
           className='cursor-pointer select-none'
@@ -31,9 +29,10 @@ function Menu() {
           smooth={true}
           duration={1000}
         >
-          {translation.NavProjects}
+          {translationProvider.NavProjects}
         </ScrollLink>
       </li>
+
       <li className='pl-10 z-50'>
         <ScrollLink
           className='cursor-pointer select-none'
@@ -41,7 +40,7 @@ function Menu() {
           smooth={true}
           duration={1000}
         >
-          {translation.NavContact}
+          {translationProvider.NavContact}
         </ScrollLink>
       </li>
     </ul>

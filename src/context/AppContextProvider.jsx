@@ -6,33 +6,38 @@ import Cookies from 'js-cookie';
 export const AppContext = React.createContext();
 
 function AppContextProvider({ children }) {
-  const [language, setLanguage] = useState(Cookies.get('language') || 'en');
+  const [currentLanguage, setCurrentLanguage] = useState(
+    Cookies.get('language') || 'en'
+  );
 
   useEffect(() => {
-    if (!language) {
-      setLanguage(navigator.language.substring(0, 2));
-    } else if (language == 'es') {
-      setLanguage('es');
-    } else if (language == 'en') {
-      setLanguage('en');
+    if (!currentLanguage) {
+      setCurrentLanguage(navigator.language.substring(0, 2));
+    } else if (currentLanguage == 'es') {
+      setCurrentLanguage('es');
+    } else if (currentLanguage == 'en') {
+      setCurrentLanguage('en');
     } else {
-      setLanguage('en');
+      setCurrentLanguage('en');
     }
-    Cookies.set('language', language);
-  }, [setLanguage, language]);
+    Cookies.set('currentLanguage', currentLanguage);
+  }, [setCurrentLanguage, currentLanguage]);
 
   function getLanguage() {
-    let lang = language;
-    let translation = translations[lang];
-    if (!translation) {
-      translation = translations.en;
+    let lang = currentLanguage;
+    let translationProvider = translations[lang];
+    if (!translationProvider) {
+      translationProvider = translations.en;
     }
-    return translation;
+    return translationProvider;
   }
-  let translation = getLanguage();
+
+  let translationProvider = getLanguage();
 
   return (
-    <AppContext.Provider value={{ language, setLanguage, translation }}>
+    <AppContext.Provider
+      value={{ currentLanguage, setCurrentLanguage, translationProvider }}
+    >
       {children}
     </AppContext.Provider>
   );

@@ -33,9 +33,10 @@ export default {
       },
 
       textColor: {
-        tertiary: '#5899e2',
+        tertiary: '#72efdd',
       },
       fontSize: {
+        '1.5xl': '1.35rem',
         '7.5xl': '6rem',
         '10xl': '10rem',
         '11xl': '11rem',

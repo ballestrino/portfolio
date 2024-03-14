@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 /* Delete x scroll bar */
-body {
+body,
+html {
   overflow-x: hidden;
+  scrollbar-color: #4f46e5 #f5f5f5;
 }
 
 /* Prevents the slider from being too wide */

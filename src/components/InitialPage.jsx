@@ -1,13 +1,13 @@
 import NavBar from './NavBar';
-import Hello from './Hello';
 import MyImage from './MyImage';
+import Presentation from './Presentation';
 
 function InitialPage() {
   return (
-    <header className='w-screen h-screen bg-primary'>
+    <header className='flex w-screen h-screen bg-primary'>
       <NavBar />
-      <section className='flex'>
-        <Hello />
+      <section className='flex justify-between w-3/6 m-auto'>
+        <Presentation />
         <MyImage />
       </section>
     </header>
