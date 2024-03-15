@@ -1,5 +1,12 @@
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContextProvider';
+import iconjs from '../../public/javascript.png';
+import iconReact from '../../public/react.png';
+import iconTailwind from '../../public/tailwind.png';
+import iconVite from '../../public/vite.png';
+import iconGit from '../../public/git.png';
+import iconLinkedIn from '../../public/linkedIn.icon.svg';
+import iconGitHub from '../../public/github.icon.svg';
 
 function Presentation() {
   const { translationProvider } = useContext(AppContext);
@@ -39,12 +46,12 @@ function Presentation() {
         </section>
         <section className='flex mt-5 '>
           <img
-            src='/linkedIn.icon.svg'
+            src={iconLinkedIn}
             alt='LinkedIn icon'
             className='h-7 w-7 mr-4'
           />
           <a href='https://github.com/ballestrino' target='_blank'>
-            <img src='/github.icon.svg' alt='' className='h-7 w-7' />
+            <img src={iconGitHub} alt='' className='h-7 w-7' />
           </a>
         </section>
       </div>
@@ -52,19 +59,19 @@ function Presentation() {
       <div>
         <ul className='flex '>
           <li>
-            <img src='/react.png' alt='' className='h-7 w-7 mr-4' />
+            <img src={iconReact} alt='' className='h-7 w-7 mr-4' />
           </li>
           <li>
-            <img src='javascript.png' alt='' className='h-7 w-7 mr-4' />
+            <img src={iconjs} alt='' className='h-7 w-7 mr-4' />
           </li>
           <li>
-            <img src='tailwind.png' alt='' className='h-7 w-7 mr-4' />
+            <img src={iconTailwind} alt='' className='h-7 w-7 mr-4' />
           </li>
           <li>
-            <img src='vite.png' alt='' className='h-7 w-7 mr-4' />
+            <img src={iconVite} alt='' className='h-7 w-7 mr-4' />
           </li>
           <li>
-            <img src='git.png' alt='' className='h-7 w-7 mr-4' />
+            <img src={iconGit} alt='' className='h-7 w-7 mr-4' />
           </li>
         </ul>
       </div>

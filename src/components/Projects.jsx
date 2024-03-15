@@ -1,3 +1,4 @@
+import projectExamplePhoto from '../../public/project1.png';
 import ProjectSquare from './ProjectSquare';
 function Projects() {
   return (
@@ -37,26 +38,26 @@ function Projects() {
           <ProjectSquare
             title='Project 1'
             description='This is a description of the project 1'
-            src='/project1.png'
+            src={projectExamplePhoto}
             alt='Project 1'
           />
           <ProjectSquare
             title='Project 2'
             description='This is a description of the project 2'
-            src='/project1.png'
+            src={projectExamplePhoto}
             alt='Project 2'
           />
 
           <ProjectSquare
             title='Project 3'
             description='This is a description of the project 3'
-            src='/project1.png'
+            src={projectExamplePhoto}
             alt='Project 3'
           />
           <ProjectSquare
             title='Project 4'
             description='This is a description of the project 4'
-            src='/project1.png'
+            src={projectExamplePhoto}
             alt='Project 4'
           />
         </section>

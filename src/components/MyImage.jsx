@@ -1,9 +1,12 @@
+import personalPhoto from '../../public/personalPhoto.png';
+import irregularShape from '../../public/irregularShape.png';
+
 function MyImage() {
   return (
     <section className='flex justify-center items-center w-fit relative pl-20 '>
       <div className='absolute m-auto z-0'>
         <img
-          src='/irregularShape.png'
+          src={irregularShape}
           alt='Irregular shape behind my photo'
           className=' 
           lg:h-400 lg:w-400 
@@ -20,7 +23,7 @@ function MyImage() {
         '
       >
         <img
-          src='/personalPhoto.png'
+          src={personalPhoto}
           alt='A photo of Ignacio Ballestrino'
           className=''
         />

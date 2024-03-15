@@ -1,4 +1,5 @@
 import prop_types from 'prop-types';
+import projectExamplePhoto from '../../public/project1.png';
 
 function ProjectSquare({ title, description, src, alt }) {
   return (
