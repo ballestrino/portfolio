@@ -14,10 +14,10 @@ function AboutMe() {
     >
       <div
         className='
-        flex flex-col items-start 
-        w-3/6 
+        flex flex-col items-center 
+        w-10/12 text-center text-balance
         m-auto 
-        border-r-2 border-customGray
+        lg:w-3/6 lg:border-r-2 lg:border-customGray lg:text-start lg:items-start
         '
       >
         <div className='w-3/4 '>
@@ -26,7 +26,7 @@ function AboutMe() {
             xxl:text-6xl 
             xl:text-5xl 
             lg:text-4xl 
-            md:text-3xl
+            text-3xl
             '
           >
             {translationProvider.AboutMeTitle}
