@@ -1,12 +1,8 @@
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContextProvider';
-import iconjs from '../../public/javascript.png';
-import iconReact from '../../public/react.png';
-import iconTailwind from '../../public/tailwind.png';
-import iconVite from '../../public/vite.png';
-import iconGit from '../../public/git.png';
 import iconLinkedIn from '../../public/linkedIn.icon.svg';
 import iconGitHub from '../../public/github.icon.svg';
+import Icons from './Icons';
 
 function Presentation() {
   const { translationProvider } = useContext(AppContext);
@@ -55,26 +51,7 @@ function Presentation() {
           </a>
         </section>
       </div>
-
-      <div>
-        <ul className='flex '>
-          <li>
-            <img src={iconReact} alt='' className='h-7 w-7 mr-4' />
-          </li>
-          <li>
-            <img src={iconjs} alt='' className='h-7 w-7 mr-4' />
-          </li>
-          <li>
-            <img src={iconTailwind} alt='' className='h-7 w-7 mr-4' />
-          </li>
-          <li>
-            <img src={iconVite} alt='' className='h-7 w-7 mr-4' />
-          </li>
-          <li>
-            <img src={iconGit} alt='' className='h-7 w-7 mr-4' />
-          </li>
-        </ul>
-      </div>
+      <Icons />
     </section>
   );
 }
