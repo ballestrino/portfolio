@@ -8,8 +8,10 @@ export default function Footer() {
     >
       <section
         className='
-        flex items-center justify-between
-        w-3/6 
+        flex lg:flex-row items-center lg:justify-between justify-center
+        flex-col
+        lg:w-3/6 
+        w-7/12
         h-full
         m-auto
         
@@ -22,17 +24,18 @@ export default function Footer() {
         xxl:text-6xl 
         xl:text-5xl
         lg:text-4xl 
-        md:text-3xl 
+        text-3xl 
         transition-all duration-300 ease-in-out
         hover:text-hoverContactUs
-        mr-10
+        lg:mr-10 lg:mb-0
+        mb-5
        
         '
         >
           Contact Us
         </h2>
         <div>
-          <p className='mr-10 text-footer text-xl'>
+          <p className='lg:mr-10 text-footer text-xl'>
             <a href='mailto:nachoballestrino02@gmail.com'>
               nachoballestrino02@gmail.com
             </a>
