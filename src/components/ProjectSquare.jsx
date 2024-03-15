@@ -15,8 +15,14 @@ function ProjectSquare({ title, description, src, alt }) {
           className='mb-5 aspect-video rounded-lg'
         />
       </div>
-      <h3 className='text-ProjectTitle text-3xl'>{title}</h3>
-      <p className='text-white text-lg'>{description}</p>
+      <h3
+        className='text-ProjectTitle 
+
+      text-2xl'
+      >
+        {title}
+      </h3>
+      <p className='text-white text-md'>{description}</p>
     </div>
   );
 }

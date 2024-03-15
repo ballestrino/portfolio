@@ -1,19 +1,22 @@
 import projectExamplePhoto from '../../public/project1.png';
 import ProjectSquare from './ProjectSquare';
+import { useContext } from 'react';
+import { AppContext } from '../context/AppContextProvider';
 function Projects() {
+  const { translationProvider } = useContext(AppContext);
   return (
     <section
       //Projects component container
       id='projects'
       className='
       flex justify-items-center bg-primary
-      h-fit w-screen py-40 pt-60
+      h-fit w-screen lg:py-40 lg:pt-60 py-20
       '
     >
       <div
         //title and projects grid container
         className='
-        flex flex-col w-3/6 m-auto
+        flex flex-col items-center lg:w-3/6 w-7/12 m-auto
         '
       >
         <h2
@@ -23,15 +26,15 @@ function Projects() {
           xxl:text-6xl 
           xl:text-5xl 
           lg:text-4xl 
-          md:text-3xl
+          text-3xl
           '
         >
-          Projects
+          {translationProvider.ProjectsTitle}
         </h2>
         <section
           //Projects grid container
           className=' 
-          grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-10 \
+          grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-20 gap-y-10 \
           mt-5
           '
         >
