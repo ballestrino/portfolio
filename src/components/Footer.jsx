@@ -35,13 +35,13 @@ export default function Footer() {
           Contact Us
         </h2>
         <div>
-          <p className='lg:mr-10 text-footer text-xl'>
+          <p className='lg:mr-10 text-footer lg:text-xl'>
             <a href='mailto:nachoballestrino02@gmail.com'>
               nachoballestrino02@gmail.com
             </a>
           </p>
           <p>
-            <a className='text-footer' href='tel:+598 98 857 476'>
+            <a className='text-footer lg:text-xl' href='tel:+598 98 857 476'>
               +598 98 857 476
             </a>
           </p>
