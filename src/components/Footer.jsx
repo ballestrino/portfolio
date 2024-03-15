@@ -1,9 +1,4 @@
-import { AppContext } from '../context/AppContextProvider';
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
-
 export default function Footer() {
-  const { translationProvider } = useContext(AppContext);
   return (
     <footer
       id='contact'
@@ -13,7 +8,7 @@ export default function Footer() {
     >
       <section
         className='
-        flex justify-center items-center
+        flex items-center justify-between
         w-3/6 
         h-full
         m-auto
@@ -30,11 +25,24 @@ export default function Footer() {
         md:text-3xl 
         transition-all duration-300 ease-in-out
         hover:text-hoverContactUs
+        mr-10
        
         '
         >
-          <Link to='/contact-us'>{translationProvider.ContactUs}</Link>
+          Contact Us
         </h2>
+        <div>
+          <p className='mr-10 text-footer text-xl'>
+            <a href='mailto:nachoballestrino02@gmail.com'>
+              nachoballestrino02@gmail.com
+            </a>
+          </p>
+          <p>
+            <a className='text-footer' href='tel:+598 98 857 476'>
+              +598 98 857 476
+            </a>
+          </p>
+        </div>
       </section>
     </footer>
   );

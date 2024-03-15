@@ -36,6 +36,7 @@ export default {
         tertiary: '#72efdd',
         ProjectTitle: '#8ecae6',
         hoverContactUs: '#274c77',
+        footer: '#8e8e8e',
       },
       fontSize: {
         '1.5xl': '1.35rem',
@@ -50,6 +51,7 @@ export default {
         secondary: '#22333b',
         tertiary: '#EFD3D7',
         footer: '#111111',
+        form: '#1e1e1e',
       },
       borderColor: {
         button: '#5899e2',

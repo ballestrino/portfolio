@@ -8,8 +8,3 @@ html {
   overflow-x: hidden;
   scrollbar-color: #4f46e5 #f5f5f5;
 }
-
-/* Prevents the slider from being too wide */
-.slick-slider {
-  max-width: 500px !important;
-}

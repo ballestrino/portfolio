@@ -1,17 +1,13 @@
-import ContactPage from './Pages/ContactPage';
-import PrincipalPage from './Pages/PrincipalPage';
-import { Route, Routes } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import InitialPage from './components/InitialPage';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<PrincipalPage />} />
-        <Route path='/contact-us' element={<ContactPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <InitialPage />
+      <MainContent />
+      <Footer />
+    </>
   );
 }
-
-export default App;

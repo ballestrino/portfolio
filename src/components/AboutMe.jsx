@@ -26,7 +26,8 @@ function AboutMe() {
             xxl:text-6xl 
             xl:text-5xl 
             lg:text-4xl 
-            md:text-3xl '
+            md:text-3xl
+            '
           >
             {translationProvider.AboutMeTitle}
           </h2>
