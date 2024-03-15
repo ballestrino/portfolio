@@ -36,7 +36,11 @@ function AppContextProvider({ children }) {
 
   return (
     <AppContext.Provider
-      value={{ currentLanguage, setCurrentLanguage, translationProvider }}
+      value={{
+        currentLanguage,
+        setCurrentLanguage,
+        translationProvider,
+      }}
     >
       {children}
     </AppContext.Provider>

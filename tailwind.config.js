@@ -35,6 +35,7 @@ export default {
       textColor: {
         tertiary: '#72efdd',
         ProjectTitle: '#8ecae6',
+        hoverContactUs: '#274c77',
       },
       fontSize: {
         '1.5xl': '1.35rem',
@@ -48,17 +49,20 @@ export default {
         primary: '#0a0908',
         secondary: '#22333b',
         tertiary: '#EFD3D7',
+        footer: '#111111',
       },
       borderColor: {
         button: '#5899e2',
         customGray: '#343a40',
+      },
+      borderWidth: {
+        1: '1px',
       },
       //media queries
       screens: {
         xs: '475px',
         sm: '640px',
         md: '768px',
-        'md-lg': '900px',
         lg: '1024px',
         xl: '1200px',
         xxl: '1750px',
