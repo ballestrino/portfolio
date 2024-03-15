@@ -7,15 +7,22 @@ function InitialPage() {
     <header
       id='home'
       className='
-      flex bg-primary 
-      w-screen h-screen'
+      flex bg-primary       
+      w-screen h-screen
+      
+      '
     >
       <NavBar />
       <section
         className='
-      flex justify-between 
-      w-3/6 
-      m-auto'
+        lg:flex lg:flex-row lg:justify-between lg:items-stretch
+        lg:w-3/6 
+        lg:m-auto
+        lg:text-start
+        w-7/12
+        text-center
+        flex flex-col-reverse justify-center items-center m-auto 
+        '
       >
         <Presentation />
         <MyImage />

@@ -3,7 +3,7 @@ import irregularShape from '../../public/irregularShape.png';
 
 function MyImage() {
   return (
-    <section className='flex justify-center items-center w-fit relative pl-20 '>
+    <section className='flex justify-center items-center w-fit relative lg:pl-20 '>
       <div className='absolute m-auto z-0'>
         <img
           src={irregularShape}
@@ -11,15 +11,17 @@ function MyImage() {
           className=' 
           lg:h-400 lg:w-400 
           md:h-320 md:w-320
+          h-270 w-270
           '
         />
       </div>
       <div
         className='
         flex justify-center z-10
-        xxl:w-400 h-400 
+        xxl:w-400 xxl:h-400 
         lg:h-380 lg:w-380 
         md:h-320 md:w-320 
+        h-270 w-270
         '
       >
         <img

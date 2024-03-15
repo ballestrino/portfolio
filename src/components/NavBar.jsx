@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <nav
       className='relative justify-end items-center text-white w-screen hidden
-      md:flex md:fixed md:top-4
+      lg:flex lg:fixed lg:top-4
       '
     >
       <NavOptions />

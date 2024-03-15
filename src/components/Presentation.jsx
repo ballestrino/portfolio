@@ -10,19 +10,21 @@ function Presentation() {
   return (
     <section
       className='
-      flex flex-col justify-between text-white w-fit pt-4
-      xxl:
+      flex flex-col lg:justify-between
+      text-white w-fit pt-4
+      items-center
+      
       '
     >
       <div>
-        <section>
+        <section className='flex flex-col justify-center items-center'>
           <h1
             className='
            text-tertiary font-mono select-none
             xxl:text-6xl 
             xl:text-5xl 
             lg:text-4xl 
-            md:text-3xl 
+            text-3xl 
             '
           >
             {translationProvider.Hello}
@@ -40,7 +42,11 @@ function Presentation() {
             {translationProvider.webDeveloper}
           </p>
         </section>
-        <section className='flex mt-5 '>
+        <section
+          className='
+        lg:flex mt-5 hidden
+        '
+        >
           <img
             src={iconLinkedIn}
             alt='LinkedIn icon'
