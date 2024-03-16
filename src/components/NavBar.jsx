@@ -1,12 +1,8 @@
-import NavOptions from './NavOptions.jsx';
+import NavOptions from "./NavOptions.jsx";
 
 function NavBar() {
   return (
-    <nav
-      className='relative justify-end items-center text-white w-screen hidden
-      lg:flex lg:fixed lg:top-4
-      '
-    >
+    <nav className="relative hidden w-screen items-center justify-end text-white lg:fixed lg:top-4 lg:flex">
       <NavOptions />
     </nav>
   );

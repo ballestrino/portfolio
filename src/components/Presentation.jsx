@@ -1,65 +1,40 @@
-import { useContext } from 'react';
-import { AppContext } from '../context/AppContextProvider';
-import iconLinkedIn from '../../public/linkedIn.icon.svg';
-import iconGitHub from '../../public/github.icon.svg';
-import Icons from './Icons';
+import { useContext } from "react";
+import { AppContext } from "../context/AppContextProvider";
+import LinkIcons from "./LinkIcons";
+import Icons from "./Icons";
 
 function Presentation() {
   const { translationProvider } = useContext(AppContext);
 
   return (
     <section
-      className='
-      flex flex-col lg:justify-between
-      text-white w-fit pt-4
-      items-center
-      
-      '
+      className="flex w-fit flex-col items-center pt-4 text-white
+      lg:justify-between"
     >
-      <div>
-        <section className='flex flex-col justify-center items-center'>
+      <section>
+        <div className="flex flex-col items-center justify-center">
           <h1
-            className='
-           text-primary font-mono select-none
-            xxl:text-6xl 
-            xl:text-5xl 
-            lg:text-4xl 
-            text-3xl 
-            transition-all duration-300 ease-in-out
-            hover:text-hoverContactUs
-            '
+            className="select-none font-mono text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
+            lg:text-4xl xl:text-5xl xxl:text-6xl"
           >
             {translationProvider.Hello}
           </h1>
 
           <p
-            className='
-            text-white select-none pt-5
-            xxl:text-1.5xl
-            xl:text-xl
-            lg:text-xl
-            md:text-lg
-            '
+            className="text-md select-none pt-5 text-white
+            md:text-lg lg:text-xl xxl:text-1.5xl"
           >
             {translationProvider.webDeveloper}
           </p>
-        </section>
-        <section
-          className='
-        lg:flex mt-5 hidden
-        '
-        >
-          <img
-            src={iconLinkedIn}
-            alt='LinkedIn icon'
-            className='h-7 w-7 mr-4'
-          />
-          <a href='https://github.com/ballestrino' target='_blank'>
-            <img src={iconGitHub} alt='' className='h-7 w-7' />
-          </a>
-        </section>
-      </div>
-      <Icons />
+        </div>
+
+        <div className="hidden lg:flex">
+          <LinkIcons />
+        </div>
+      </section>
+      <section>
+        <Icons />
+      </section>
     </section>
   );
 }

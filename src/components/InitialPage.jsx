@@ -1,28 +1,14 @@
-import NavBar from './NavBar';
-import MyImage from './MyImage';
-import Presentation from './Presentation';
+import NavBar from "./NavBar";
+import MyImage from "./MyImage";
+import Presentation from "./Presentation";
 
 function InitialPage() {
   return (
-    <header
-      id='home'
-      className='
-      flex bg-primary       
-      w-screen h-screen
-      
-      '
-    >
+    <header id="home" className="flex h-screen w-screen bg-primary">
       <NavBar />
       <section
-        className='
-        lg:flex lg:flex-row lg:justify-between lg:items-stretch
-        lg:w-3/6 
-        lg:m-auto
-        lg:text-start
-        w-7/12
-        text-center
-        flex flex-col-reverse justify-center items-center m-auto 
-        '
+        className="m-auto flex w-7/12 flex-col-reverse items-center justify-center text-center 
+        lg:m-auto lg:flex lg:w-3/6 lg:flex-row lg:items-stretch lg:justify-between lg:text-start"
       >
         <Presentation />
         <MyImage />

@@ -1,43 +1,28 @@
-import { useContext } from 'react';
-import { AppContext } from '../context/AppContextProvider';
+import { useContext } from "react";
+import { AppContext } from "../context/AppContextProvider";
 
 function AboutMe() {
   const { translationProvider } = useContext(AppContext);
   return (
     <section
-      id='aboutMe'
-      className='
-        flex justify-items-center 
-        h-vh50 w-screen
-      bg-primary
-        '
+      id="aboutMe"
+      className="flex h-vh50 w-screen justify-items-center bg-primary"
     >
       <div
-        className='
-        flex flex-col items-center 
-        w-10/12 text-center text-balance
-        m-auto 
-        lg:w-3/6 lg:border-r-2 lg:border-customGray lg:text-start lg:items-start
-        '
+        className="
+        m-auto flex w-10/12 flex-col items-center text-balance text-center 
+        lg:w-3/6 lg:items-start lg:border-r-2 lg:border-customGray lg:text-start"
       >
-        <div className='w-3/4 '>
+        <div className="w-3/4 ">
           <h2
-            className='pt-5 text-primary font-mono select-none
-            xxl:text-6xl 
-            xl:text-5xl 
-            lg:text-4xl 
-            text-3xl
-            transition-all duration-300 ease-in-out
-            hover:text-hoverContactUs
-            '
+            className="select-none pt-5 font-mono text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
+            lg:text-4xl xl:text-5xl xxl:text-6xl"
           >
             {translationProvider.AboutMeTitle}
           </h2>
           <p
-            className='text-white select-none py-5
-            xl:text-2xl
-            lg:text-xl
-            md:text-lg'
+            className="select-none py-5 text-white 
+            md:text-lg lg:text-xl xl:text-2xl"
           >
             {translationProvider.AboutMeText}
           </p>

@@ -1,69 +1,49 @@
-import projectExamplePhoto from '../../public/project1.png';
-import ProjectSquare from './ProjectSquare';
-import { useContext } from 'react';
-import { AppContext } from '../context/AppContextProvider';
+import projectExamplePhoto from "../../public/project1.png";
+import ProjectSquare from "./ProjectSquare";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContextProvider";
 function Projects() {
   const { translationProvider } = useContext(AppContext);
   return (
     <section
-      //Projects component container
-      id='projects'
-      className='
-      flex justify-items items-center bg-primary
-      h-fit w-screen lg:py-40 lg:pt-60 py-20 
-      '
+      id="projects"
+      className="justify-items flex h-fit w-screen items-center bg-primary py-20 lg:py-40 lg:pt-60"
     >
-      <div
-        //title and projects grid container
-        className='
-        flex flex-col items-center lg:items-start lg:w-3/6 w-7/12 m-auto
-        '
-      >
+      <div className="m-auto flex w-7/12 flex-col items-center lg:w-3/6 lg:items-start">
         <h2
-          //Projects title
-          className='
-        text-primary font-mono select-none pb-5
-          xxl:text-6xl 
-          xl:text-5xl 
-          lg:text-4xl 
-          text-3xl
-          transition-all duration-300 ease-in-out
-          hover:text-hoverContactUs
-          '
+          className="select-none pb-5 font-mono text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
+          lg:text-4xl xl:text-5xl xxl:text-6xl"
         >
           {translationProvider.ProjectsTitle}
         </h2>
         <section
-          //Projects grid container
-          className=' 
-          grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-20 gap-y-10 \
-          mt-5
-          '
+          className="mt-5 grid gap-y-10 
+          xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-20"
         >
           <ProjectSquare
-            title='project1Title'
-            description='descriptionProject1'
+            title="project1Title"
+            description="descriptionProject1"
             src={projectExamplePhoto}
-            alt='Project 1'
+            alt="Project 1"
           />
           <ProjectSquare
-            title='project2Title'
-            description='descriptionProject2'
+            title="project2Title"
+            description="descriptionProject2"
             src={projectExamplePhoto}
-            alt='Project 2'
+            alt="Project 2"
           />
 
           <ProjectSquare
-            title='project3Title'
-            description='descriptionProject3'
+            title="project3Title"
+            description="descriptionProject3"
             src={projectExamplePhoto}
-            alt='Project 3'
+            alt="Project 3"
           />
           <ProjectSquare
-            title='project4Title'
-            description='descriptionProject4'
+            title="project4Title"
+            description="descriptionProject4"
             src={projectExamplePhoto}
-            alt='Project 4'
+            alt="Project 4"
           />
         </section>
       </div>
