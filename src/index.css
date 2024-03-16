@@ -4,10 +4,15 @@
 
 /* Delete x scroll bar */
 
-html,body {
+html,
+body {
   overflow-x: hidden;
   scrollbar-color: #f5f5f5 transparent;
   scrollbar-width: thin;
+  font-family: "Montserrat", sans-serif;
 }
 
-
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/Montserrat-VariableFont_wght.ttf");
+}

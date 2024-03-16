@@ -5,10 +5,10 @@ import LinkIcons from "./LinkIcons";
 export default function Footer() {
   const { translationProvider } = useContext(AppContext);
   return (
-    <footer id="contact" className="h-vh25 w-screen bg-footer">
+    <footer id="contact" className="h-vh25 w-screen border-t-1 border-gray-700">
       <section className="m-auto flex h-full w-7/12 flex-col items-center justify-center lg:w-3/6 lg:flex-row lg:justify-between">
         <h2
-          className="mb-5 cursor-pointer select-none font-mono text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
+          className="mb-5 cursor-pointer select-none text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
           lg:mb-0 lg:mr-10 lg:text-4xl xl:text-5xl xxl:text-6xl"
         >
           {translationProvider.ContactUsTitle}

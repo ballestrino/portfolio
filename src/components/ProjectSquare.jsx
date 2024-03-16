@@ -14,10 +14,10 @@ function ProjectSquare({ title, description, src, alt }) {
           className="mb-5 aspect-video rounded-lg"
         />
       </div>
-      <h3 className="text-2xl text-eachProjectH3 group-hover:text-hoverProjectTitle">
+      <h3 className="text-xl lg:text-2xl text-eachProjectH3 group-hover:text-hoverProjectTitle">
         {translationProvider[title]}
       </h3>
-      <p className="text-md text-white">{translationProvider[description]}</p>
+      <p className="lg:text-lg text-sm text-white">{translationProvider[description]}</p>
     </div>
   );
 }

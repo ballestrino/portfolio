@@ -8,7 +8,7 @@ export default function icons() {
   //List of Icons
   const iconsRoutesList = [iconReact, iconJs, iconTailwind, iconVite, iconGit];
   return (
-    <div className="flex w-full items-center justify-center lg:items-start lg:justify-start">
+    <div className="flex w-full items-center justify-center pl-1 lg:items-start lg:justify-start">
       <ul className="flex">
         {iconsRoutesList.map((icon, index) => {
           return (

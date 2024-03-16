@@ -7,11 +7,11 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="justify-items flex h-fit w-screen items-center bg-primary py-20 lg:py-40 lg:pt-60"
+      className="justify-items flex h-fit w-screen items-center py-20  lg:py-40 lg:pt-60"
     >
       <div className="m-auto flex w-7/12 flex-col items-center lg:w-3/6 lg:items-start">
         <h2
-          className="select-none pb-5 font-mono text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
+          className="font font-Montserrat select-none pb-5 text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
           lg:text-4xl xl:text-5xl xxl:text-6xl"
         >
           {translationProvider.ProjectsTitle}

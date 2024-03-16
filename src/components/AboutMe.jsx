@@ -4,18 +4,15 @@ import { AppContext } from "../context/AppContextProvider";
 function AboutMe() {
   const { translationProvider } = useContext(AppContext);
   return (
-    <section
-      id="aboutMe"
-      className="flex h-vh50 w-screen justify-items-center bg-primary"
-    >
+    <section id="aboutMe" className="flex h-vh50 w-screen justify-items-center">
       <div
         className="
-        m-auto flex w-10/12 flex-col items-center py-7 text-balance text-center
+        m-auto flex w-10/12 flex-col items-center text-balance py-7 text-center
         lg:w-3/6 lg:items-start lg:border-r-2 lg:border-customGray lg:text-start"
       >
-        <div className="flex flex-col gap-5 w-3/4 ">
+        <div className="flex w-3/4 flex-col gap-5 ">
           <h2
-            className="select-none font-mono text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
+            className="font-Montserrat select-none text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
             lg:text-4xl xl:text-5xl xxl:text-6xl"
           >
             {translationProvider.AboutMeTitle}
