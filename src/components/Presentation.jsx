@@ -20,11 +20,13 @@ function Presentation() {
         <section className='flex flex-col justify-center items-center'>
           <h1
             className='
-           text-tertiary font-mono select-none
+           text-primary font-mono select-none
             xxl:text-6xl 
             xl:text-5xl 
             lg:text-4xl 
             text-3xl 
+            transition-all duration-300 ease-in-out
+            hover:text-hoverContactUs
             '
           >
             {translationProvider.Hello}

@@ -6,14 +6,17 @@ function Menu() {
   const { translationProvider } = useContext(AppContext);
   return (
     <ul
-      className='flex justify-between items-center pr-6 text-white
-      md:flex md:text-md
+      className='
+      flex justify-between items-center pr-6 text-white
+      lg:flex md:text-md
       sm:hidden
       '
     >
       <li className='pl-10 z-50'>
         <ScrollLink
-          className='cursor-pointer select-none'
+          className='
+          cursor-pointer select-none
+          '
           to='home'
           smooth={true}
           duration={1000}
@@ -24,7 +27,9 @@ function Menu() {
 
       <li className='pl-10 z-50'>
         <ScrollLink
-          className='cursor-pointer select-none'
+          className='
+          cursor-pointer select-none
+          '
           to='aboutMe'
           offset={-218} //reducir la bajada del scroll por 218px
           smooth={true}
@@ -36,7 +41,9 @@ function Menu() {
 
       <li className='pl-10 z-50'>
         <ScrollLink
-          className='cursor-pointer select-none'
+          className='
+          cursor-pointer select-none
+          '
           to='projects'
           offset={185}
           smooth={true}
@@ -48,8 +55,13 @@ function Menu() {
 
       <li className='pl-10 z-50'>
         <ScrollLink
-          className='cursor-pointer select-none'
+          className='
+          cursor-pointer 
+          select-none
+          '
           to='contact'
+          //prevents the scroll to with the final of the page
+          offset={-690}
           smooth={true}
           duration={1000}
         >

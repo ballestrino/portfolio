@@ -11,18 +11,36 @@
     "SpanAboutMe": "Explore my portfolio and discover how I transform ideas into code with passion and originality.",
     "SeeProjects": "View Projects",
     "ProjectsTitle": "Projects",
-    "ContactUs": "Contact Us"
+    "ContactUsTitle": "Contact Us",
+    "project1Title": "Project 1",
+    "project2Title": "Project 2",
+    "project3Title": "Project 3",
+    "project4Title": "Project 4",
+    "descriptionProject1": "This is the description of the project 1",
+    "descriptionProject2": "This is the description of the project 2",
+    "descriptionProject3": "This is the description of the project 3",
+    "descriptionProject4": "This is the description of the project 4"
   },
   "ess": {
     "NavHome": "Inicio",
     "NavAbout": "Sobre mi",
     "NavProjects": "Proyectos",
     "NavContact": "Contacto",
-    "Hello": "DESARROLLADOR FRONT-END REACT",
-    "webDeveloper": "Hola, soy Ignacio Ballestrino. Un desarrollador Front-end React de Uruguay.",
+    "Hello": "FRONT-END REACT DEVELOPER",
+    "webDeveloper": "Hola, soy Ignacio Ballestrino. Un desarrollador de Front-end con react nacido en Uruguay.",
+    "AboutMeTitle": "Sobre Mi",
     "AboutMeText": "Soy un programador de 17 años de Uruguay. Mi fascinación por la programación comenzó a temprana edad. Soy dedicado, creativo y siempre en busca de soluciones innovadoras. Actualmente, trabajo en proyectos web utilizando varias tecnologías de vanguardia, y continúo aprendiendo y mejorando mis habilidades todos los días.",
     "SpanAboutMe": "Explora mi portafolio y descubre cómo transformo ideas en código con pasión y originalidad.",
     "SeeProjects": "Ver Proyectos",
-    "ContactUs": "Contactate"
+    "ProjectsTitle": "Proyectos",
+    "ContactUsTitle": "Contactate",
+    "project1Title": "Proyecto 1",
+    "project2Title": "Proyecto 2",
+    "project3Title": "Proyecto 3",
+    "project4Title": "Proyecto 4",
+    "descriptionProject1": "Esta es la descripción del proyecto 1",
+    "descriptionProject2": "Esta es la descripción del proyecto 2",
+    "descriptionProject3": "Esta es la descripción del proyecto 3",
+    "descriptionProject4": "Esta es la descripción del proyecto 4"
   }
 }

@@ -1,4 +1,8 @@
+import { useContext } from 'react';
+import { AppContext } from '../context/AppContextProvider';
+
 export default function Footer() {
+  const { translationProvider } = useContext(AppContext);
   return (
     <footer
       id='contact'
@@ -19,7 +23,7 @@ export default function Footer() {
       >
         <h2
           className='
-        text-tertiary font-mono select-none
+        text-primary font-mono select-none
         cursor-pointer
         xxl:text-6xl 
         xl:text-5xl
@@ -32,16 +36,33 @@ export default function Footer() {
        
         '
         >
-          Contact Us
+          {translationProvider.ContactUsTitle}
         </h2>
-        <div>
-          <p className='lg:mr-10 text-footer lg:text-xl'>
+        <div
+          className='
+        flex flex-col items-center lg:items-start
+        '
+        >
+          <p
+            className='
+          lg:mr-10 text-footer lg:text-xl
+          transition-all duration-300 ease-in-out
+          hover:text-white
+          '
+          >
             <a href='mailto:nachoballestrino02@gmail.com'>
               nachoballestrino02@gmail.com
             </a>
           </p>
           <p>
-            <a className='text-footer lg:text-xl' href='tel:+598 98 857 476'>
+            <a
+              className='
+            text-footer lg:text-xl
+              transition-all duration-300 ease-in-out
+             hover:text-white
+              '
+              href='tel:+598 98 857 476'
+            >
               +598 98 857 476
             </a>
           </p>

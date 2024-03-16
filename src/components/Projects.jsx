@@ -9,24 +9,26 @@ function Projects() {
       //Projects component container
       id='projects'
       className='
-      flex justify-items-center bg-primary
-      h-fit w-screen lg:py-40 lg:pt-60 py-20
+      flex justify-items items-center bg-primary
+      h-fit w-screen lg:py-40 lg:pt-60 py-20 
       '
     >
       <div
         //title and projects grid container
         className='
-        flex flex-col items-center lg:w-3/6 w-7/12 m-auto
+        flex flex-col items-center lg:items-start lg:w-3/6 w-7/12 m-auto
         '
       >
         <h2
           //Projects title
           className='
-        text-tertiary font-mono select-none pb-5
+        text-primary font-mono select-none pb-5
           xxl:text-6xl 
           xl:text-5xl 
           lg:text-4xl 
           text-3xl
+          transition-all duration-300 ease-in-out
+          hover:text-hoverContactUs
           '
         >
           {translationProvider.ProjectsTitle}
@@ -39,27 +41,27 @@ function Projects() {
           '
         >
           <ProjectSquare
-            title='Project 1'
-            description='This is a description of the project 1'
+            title='project1Title'
+            description='descriptionProject1'
             src={projectExamplePhoto}
             alt='Project 1'
           />
           <ProjectSquare
-            title='Project 2'
-            description='This is a description of the project 2'
+            title='project2Title'
+            description='descriptionProject2'
             src={projectExamplePhoto}
             alt='Project 2'
           />
 
           <ProjectSquare
-            title='Project 3'
-            description='This is a description of the project 3'
+            title='project3Title'
+            description='descriptionProject3'
             src={projectExamplePhoto}
             alt='Project 3'
           />
           <ProjectSquare
-            title='Project 4'
-            description='This is a description of the project 4'
+            title='project4Title'
+            description='descriptionProject4'
             src={projectExamplePhoto}
             alt='Project 4'
           />

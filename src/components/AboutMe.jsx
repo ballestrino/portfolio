@@ -22,11 +22,13 @@ function AboutMe() {
       >
         <div className='w-3/4 '>
           <h2
-            className='pt-5 text-tertiary font-mono select-none
+            className='pt-5 text-primary font-mono select-none
             xxl:text-6xl 
             xl:text-5xl 
             lg:text-4xl 
             text-3xl
+            transition-all duration-300 ease-in-out
+            hover:text-hoverContactUs
             '
           >
             {translationProvider.AboutMeTitle}

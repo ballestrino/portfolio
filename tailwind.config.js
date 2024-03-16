@@ -33,9 +33,10 @@ export default {
       },
 
       textColor: {
-        tertiary: '#72efdd',
-        ProjectTitle: '#8ecae6',
+        primary: '#72efdd',
+        eachProjectH3: '#1282a2',
         hoverContactUs: '#274c77',
+        hoverProjectTitle: '#8ecae6',
         footer: '#8e8e8e',
       },
       fontSize: {
@@ -47,15 +48,14 @@ export default {
       },
       backgroundColor: {
         // primary: '#5e6572',
-        primary: '#0a0908',
+        primary: '#02040f',
         secondary: '#22333b',
         tertiary: '#EFD3D7',
-        footer: '#111111',
-        form: '#1e1e1e',
+        footer: '#0f0f1c',
       },
       borderColor: {
         button: '#5899e2',
-        customGray: '#343a40',
+        customGray: '#1b1b1e',
       },
       borderWidth: {
         1: '1px',
@@ -65,7 +65,6 @@ export default {
         xs: '475px',
         sm: '640px',
         md: '768px',
-        'md-lg': '900px',
         lg: '1024px',
         xl: '1200px',
         xxl: '1750px',
