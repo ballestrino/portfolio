@@ -5,8 +5,8 @@ import { AppContext } from "../context/AppContextProvider";
 function Menu() {
   const { translationProvider } = useContext(AppContext);
   return (
-    <ul className="md:text-md flex items-center justify-between pr-6 text-white sm:hidden lg:flex">
-      <li className="z-50 pl-10">
+    <ul className="group group-[z-50]: md:text-md flex items-center justify-between pr-10 text-white sm:hidden lg:flex gap-7">
+      <li>
         <ScrollLink
           className="cursor-pointer select-none"
           to="home"
@@ -17,7 +17,7 @@ function Menu() {
         </ScrollLink>
       </li>
 
-      <li className="z-50 pl-10">
+      <li>
         <ScrollLink
           className="cursor-pointer select-none"
           to="aboutMe"
@@ -29,7 +29,7 @@ function Menu() {
         </ScrollLink>
       </li>
 
-      <li className="z-50 pl-10">
+      <li>
         <ScrollLink
           className="cursor-pointer select-none"
           to="projects"
@@ -41,7 +41,7 @@ function Menu() {
         </ScrollLink>
       </li>
 
-      <li className="z-50 pl-10">
+      <li>
         <ScrollLink
           className="cursor-pointer select-none"
           to="contact"

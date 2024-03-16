@@ -32,9 +32,9 @@ function Presentation() {
           <LinkIcons />
         </div>
       </section>
-      <section>
+      
         <Icons />
-      </section>
+      
     </section>
   );
 }
