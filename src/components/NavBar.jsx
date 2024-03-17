@@ -1,8 +1,10 @@
+import DarkLightMode from "./DarkLightMode.jsx";
 import NavOptions from "./NavOptions.jsx";
 
 function NavBar() {
   return (
-    <nav className="relative hidden w-screen items-center justify-end text-white lg:fixed lg:top-4 lg:flex">
+    <nav className="fixed top-4 z-50 w-screen items-center text-white lg:fixed lg:flex lg:justify-between">
+      <DarkLightMode />
       <NavOptions />
     </nav>
   );

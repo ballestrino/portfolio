@@ -9,14 +9,14 @@ export default function icons() {
   const iconsRoutesList = [iconReact, iconJs, iconTailwind, iconVite, iconGit];
   return (
     <div className="flex w-full items-center justify-center pl-1 lg:items-start lg:justify-start">
-      <ul className="flex">
+      <ul className="flex gap-4">
         {iconsRoutesList.map((icon, index) => {
           return (
             <li key={index}>
               <img
                 src={icon}
                 alt="programming language icon"
-                className="mr-4 mt-5 h-7 w-7 transition-all duration-300 ease-in-out hover:scale-110 lg:mt-0"
+                className="mt-5 h-7 w-7 transition-all duration-300 ease-in-out hover:scale-110 lg:mt-0"
               />
             </li>
           );

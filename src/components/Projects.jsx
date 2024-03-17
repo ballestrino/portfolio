@@ -1,21 +1,14 @@
 import projectExamplePhoto from "../../public/project1.png";
 import ProjectSquare from "./ProjectSquare";
-import { useContext } from "react";
-import { AppContext } from "../context/AppContextProvider";
+import TitleComponent from "./TitleComponent";
 function Projects() {
-  const { translationProvider } = useContext(AppContext);
   return (
     <section
       id="projects"
       className="justify-items flex h-fit w-screen items-center py-20  lg:py-40 lg:pt-60"
     >
       <div className="m-auto flex w-7/12 flex-col items-center lg:w-3/6 lg:items-start">
-        <h2
-          className="font font-Montserrat select-none pb-5 text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
-          lg:text-4xl xl:text-5xl xxl:text-6xl"
-        >
-          {translationProvider.ProjectsTitle}
-        </h2>
+        <TitleComponent translationKey="ProjectsTitle" thin="font-semibold" />
         <section
           className="mt-5 grid gap-y-10 
           xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-20"
@@ -43,7 +36,7 @@ function Projects() {
             title="project4Title"
             description="descriptionProject4"
             src={projectExamplePhoto}
-            alt="Project 4"
+            alt="Project watermark"
           />
         </section>
       </div>

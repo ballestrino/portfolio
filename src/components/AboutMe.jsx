@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../context/AppContextProvider";
-
+import TitleComponent from "./TitleComponent";
 function AboutMe() {
   const { translationProvider } = useContext(AppContext);
   return (
@@ -11,15 +11,10 @@ function AboutMe() {
         lg:w-3/6 lg:items-start lg:border-r-2 lg:border-customGray lg:text-start"
       >
         <div className="flex w-3/4 flex-col gap-5 ">
-          <h2
-            className="font-Montserrat select-none text-3xl text-primary transition-all duration-300 ease-in-out hover:text-hoverContactUs 
-            lg:text-4xl xl:text-5xl xxl:text-6xl"
-          >
-            {translationProvider.AboutMeTitle}
-          </h2>
+          <TitleComponent translationKey="AboutMeTitle" thin="font-semibold" />
           <p
-            className="select-none text-white 
-            md:text-lg lg:text-xl xl:text-2xl"
+            className="select-none text-gray-700  
+            md:text-lg lg:text-xl xl:text-2xl dark:text-white"
           >
             {translationProvider.AboutMeText}
           </p>

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -36,9 +37,10 @@ export default {
       },
 
       textColor: {
-        primary: "#72efdd",
+        dark: "#72efdd",
         eachProjectH3: "#1282a2",
-        hoverContactUs: "#274c77",
+        hoverTitle: "#9c6644",
+        hoverTitleDark: "#274c77",
         hoverProjectTitle: "#8ecae6",
         footer: "#8e8e8e",
       },
@@ -74,7 +76,6 @@ export default {
         sm: "640px",
         md: "768px",
         lg: "1024px",
-        xl: "1200px",
         xxl: "1750px",
       },
     },

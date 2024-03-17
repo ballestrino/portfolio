@@ -9,13 +9,13 @@ function MyImage() {
         <img
           src={irregularShape}
           alt="Irregular shape behind my photo"
-          className="h-270 w-270 select-none transition-all duration-500 ease-in-out hover:scale-105 md:h-320 md:w-320 lg:h-400 lg:w-400"
+          className="h-270 w-270 select-none transition-all duration-500 ease-in-out hover:scale-105 lg:h-320 lg:w-320"
         />
       </div>
 
       <div
         className="z-10 flex h-270 w-270 justify-center transition-all duration-500 ease-in-out hover:scale-105 
-        md:h-320 md:w-320 lg:h-380 lg:w-380 xxl:h-400 xxl:w-400"
+        lg:h-320 lg:w-320 xl:h-400 xl:w-400"
       >
         <ScrollLink
           className="select-none"
